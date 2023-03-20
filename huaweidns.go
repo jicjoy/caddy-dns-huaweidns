@@ -25,8 +25,9 @@ func (Provider) CaddyModule() caddy.ModuleInfo {
 // Implements caddy.Provisioner.
 func (p *Provider) Provision(ctx caddy.Context) error {
 	repl := caddy.NewReplacer()
-	p.Provider.SecretId = repl.ReplaceAll(p.Provider.SecretId, "")
-	p.Provider.SecretKey = repl.ReplaceAll(p.Provider.SecretKey, "")
+	p.Provider.AccKeyID = repl.ReplaceAll(p.Provider.AccKeyID, "")
+	p.Provider.AccKeySecret = repl.ReplaceAll(p.Provider.AccKeySecret, "")
+	p.Provider.RegionID = repl.ReplaceAll(p.Provider.RegionID, "")
 	return nil
 }
 
