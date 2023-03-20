@@ -34,8 +34,8 @@ func (p *Provider) Provision(ctx caddy.Context) error {
 // UnmarshalCaddyfile sets up the DNS provider from Caddyfile tokens. Syntax:
 //
 //		huaweidns {
-//		    secret_id "<secret_id>"
-//		    secret_key "<secret_key>"
+//		    access_key_id "<access_key_id>"
+//		    access_key_secret "<access_key_secret>"
 //	     region_id    "<region_id>"
 //		}
 func (p *Provider) UnmarshalCaddyfile(d *caddyfile.Dispenser) error {
