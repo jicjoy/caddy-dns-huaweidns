@@ -1,4 +1,4 @@
-module github.com/jicjoy/caddy-dns/huaweidns
+module github.com/jicjoy/caddy-dns-huaweidns
 
 go 1.19
 
